@@ -1,7 +1,13 @@
-export default function RootLayout({ children }) {
+import "./style/global.css"
+const Layout = ({children}) => {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html>
+      <body>
+        
+        <main>{children}</main>
+      </body>
     </html>
   )
 }
+
+export default Layout
