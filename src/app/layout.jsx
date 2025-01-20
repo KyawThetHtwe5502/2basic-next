@@ -1,10 +1,11 @@
+import Header from "./components/Header"
 import "./style/global.css"
 const Layout = ({children}) => {
   return (
     <html>
       <body>
-        
-        <main>{children}</main>
+        <Header/>
+        <main className="container mx-auto">{children}</main>
       </body>
     </html>
   )
