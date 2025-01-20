@@ -13,10 +13,10 @@ const Page = async () => {
       <h1 className='text-3xl font-bold'>Product list</h1>
       <div>
       {products.map((product) => 
-      <div key={product.id}>
+      <div key={product.id} className='border border-black p-3'>
         <h2 className='text-xl mb-3 font-bold'>{product.title}</h2>
-        <div className='flex justify-start gap-3 items-center'>
-          <p className='border border-black text-white'>{product.price}</p>
+        <div className='flex justify-start gap-3 items-center '>
+          <p className='border border-black text-white p-2 bg-black'>{product.price}</p>
           <Link href={`/products/${product.id}`} className='text-blue-500 underline'>See More</Link>
         </div>
       </div>)}
